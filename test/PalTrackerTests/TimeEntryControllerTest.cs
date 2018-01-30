@@ -152,4 +152,11 @@ namespace PalTrackerTests
             Assert.Equal(404, typedResponse.StatusCode);
         }
     }
+
+    //public void TimeEntryController()
+    //{
+    //    throw new NotImplementedException();
+    //}
+
+
 }
