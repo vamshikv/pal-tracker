@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="databases\tracker\migrations\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
