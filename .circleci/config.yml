@@ -82,7 +82,17 @@ jobs:
             wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | apt-key add -
             echo "deb https://packages.cloudfoundry.org/debian stable main" | tee /etc/apt/sources.list.d/cloudfoundry-cli.list
             apt-get update
-            apt-get install cf-cli            
+            apt-get install cf-cli
+            
+      - run:
+          name: Install jq
+          command: |
+            apt-get -y install jq
+            
+      - run:
+         name: Install flyway
+         command: |
+            curl https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/5.1.1/flyway-commandline-5.1.1-linux-x64.tar.gz | tar xvz
 
       - run:
           name: Unzip artifacts
