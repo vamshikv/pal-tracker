@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 
@@ -14,7 +14,7 @@ namespace PalTracker
 
             foreach (var action in Enum.GetValues(typeof(TrackedOperation)))
             {
-                _count.Add((TrackedOperation)action, 0);
+                _count.Add((TrackedOperation) action, 0);
             }
         }
 
